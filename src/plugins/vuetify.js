@@ -13,19 +13,24 @@ export default createVuetify({
   },
   directives,
   theme: {
+    defaultTheme: 'light',
     themes: {
       light: {
         colors: {
-          primary: '#3abbd0',
-          secondary: '#491d86',
-          accent: '#323390',
+          primary: '#F5A000',
+          secondary: '#6E8F7A',
+          accent: '#8FAE8A',
+          background: '#F7F7F4',
+          surface: '#FFFFFF',
         },
       },
       dark: {
         colors: {
-          primary: '#3abbd0',
-          secondary: '#2a0f4d',
-          accent: '#323390',
+          primary: '#F5A000',
+          secondary: '#2F3E35',
+          accent: '#8FAE8A',
+          background: '#111111',
+          surface: '#1B1B1B',
         },
       },
     },
