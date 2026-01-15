@@ -39,20 +39,20 @@
     {
       icon: 'mdi-map-marker-outline',
       title: 'Address',
-      text: '8553 N. Beach St. Ste. 227',
-      html: '8553 N. Beach St. Ste. 227<br>Fort Worth, Texas 76137',
+      text: 'Colombian Andes',
+      html: 'Colombia<br>Andean Mountain Regions',
     },
     {
-      icon: 'mdi-cellphone',
-      title: 'Phone',
-      text: '01 (800) 433 744',
-      html: '01 (800) 433 744<br>01 (800) 433 633',
+      icon: 'mdi-instagram',
+      title: 'Instagram',
+      text: '@pinchake',
+      html: '@pinchake',
     },
     {
-      icon: 'mdi-email',
-      title: 'Email',
-      text: 'john@vuetifyjs.com',
-      html: 'john@vuetifyjs.com<br>heather@vuetifyjs.com',
+      icon: 'mdi-facebook',
+      title: 'Facebook',
+      text: 'PINCHAKE guianza turistica',
+      html: 'PINCHAKE guianza turistica',
     },
   ])
 </script>

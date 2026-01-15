@@ -56,19 +56,19 @@
 
   const customers = ref([
     {
-      review: '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aspernatur, sint recusandae cum temporibus quos saepe repellendus consectetur et reprehenderit. Ratione ipsam consequuntur quo eligendi mollitia veniam facere possimus inventore."',
-      name: 'HENRY LUSIO',
-      role: 'DIRECTOR OF EXAMPLE LTD',
+      review: '"Pinchake planned an unforgettable high‑mountain trek. The guides were professional and the pace was perfect."',
+      name: 'Camila R.',
+      role: 'Bogota, Colombia',
     },
     {
-      review: '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aspernatur, sint recusandae cum temporibus quos saepe repellendus consectetur et reprehenderit. Ratione ipsam consequuntur quo eligendi mollitia veniam facere possimus inventore."',
-      name: 'HENRY LUSIO',
-      role: 'DIRECTOR OF EXAMPLE LTD',
+      review: '"We felt safe the entire route and learned a lot about the Andean ecosystems and conservation."',
+      name: 'Luis M.',
+      role: 'Medellin, Colombia',
     },
     {
-      review: '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aspernatur, sint recusandae cum temporibus quos saepe repellendus consectetur et reprehenderit. Ratione ipsam consequuntur quo eligendi mollitia veniam facere possimus inventore."',
-      name: 'HENRY LUSIO',
-      role: 'DIRECTOR OF EXAMPLE LTD',
+      review: '"Small groups, authentic local guides, and breathtaking views. Highly recommended for serious trekkers."',
+      name: 'Sarah K.',
+      role: 'Austin, USA',
     },
   ])
 

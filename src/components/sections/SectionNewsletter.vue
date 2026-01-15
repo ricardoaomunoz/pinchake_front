@@ -12,7 +12,7 @@
       >
         <BaseTitle
           space="0"
-          title="GET OUR NEWSLETTER"
+          title="Get Trek Updates"
         />
 
         <v-responsive

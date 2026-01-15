@@ -15,26 +15,26 @@
           width="100%"
         >
           <BaseSubheading
-            title="WE LOVE MAKING THINGS SIMPLE AND AMAZING"
+            title="TREKKING AND ADVENTURE IN THE COLOMBIAN ANDES"
             weight="regular"
           />
 
           <BaseHeading
             size="text-h2"
-            title="WELCOME TO ZERO"
+            title="PINCHAKE TREKKING & ADVENTURE"
             weight="medium"
           />
 
           <BaseBody>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis neque aspernatur in quas iure id aliquid, esse debitis, quibusdam mollitia! Quia ea expedita magnam totam, earum omnis et perspiciatis?
+            Local mountain guides delivering high-altitude treks across Colombia. We create safe, memorable journeys while promoting conservation of Andean ecosystems and culture.
           </BaseBody>
 
           <div
             :class="smAndDown ? 'flex-column align-start' : 'align-center'"
             class="d-flex flex-wrap"
           >
-            <BaseBtn>
-              Discover More
+            <BaseBtn :to="{ name: 'Tours' }">
+              View Tours
             </BaseBtn>
 
             <span class="font-weight-bold ml-6 mr-4 my-4">or</span>
@@ -44,8 +44,9 @@
               class="pa-1"
               height="auto"
               text
+              href="#contact-us"
             >
-              Get Started Now
+              Plan Your Trek
             </BaseBtn>
           </div>
         </v-responsive>

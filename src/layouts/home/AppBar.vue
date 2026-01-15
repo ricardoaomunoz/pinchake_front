@@ -8,16 +8,12 @@
     <template #prepend>
       <BaseImg
         :src="LogoImg"
-        class="mx-3 hidden-xs"
-        width="46"
+        class="mx-3"
+        width="54"
         contain
       />
 
-      <BaseImg
-        :src="theme.current.value.dark ? ZeroLogoDark : ZeroLogoLight"
-        width="96"
-        contain
-      />
+      <div class="text-subtitle-1 font-weight-bold">Pinchake</div>
     </template>
 
     <v-spacer />
@@ -55,11 +51,7 @@
 
 <script setup>
   import HomeDrawer from './Drawer.vue'
-  import LogoImg from '@/assets/logo.svg'
-  import ZeroLogoLight from '@/assets/zero-logo-light.svg'
-  import ZeroLogoDark from '@/assets/zero-logo-dark.svg'
-
-  const theme = useTheme()
+  import LogoImg from '@/assets/pinchake-logo.jpg'
 
   const drawer = ref(null)
   const items = ref([

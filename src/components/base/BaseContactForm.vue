@@ -20,7 +20,7 @@
 
     <BaseBtn
       :color="!theme.current.value.dark ? 'accent' : 'white'"
-      href="mailto:shop@vuetifyjs.com?subject=Zero%20Theme%20Question"
+      href="mailto:info@pinchake.co?subject=Pinchake%20Trek%20Inquiry"
       target="_blank"
       outlined
     >
@@ -36,7 +36,7 @@
     subtitle: String,
     title: {
       type: String,
-      default: 'MAIL US YOUR MESSAGE',
+      default: 'Send Us a Message',
     },
   })
 </script>

@@ -104,7 +104,7 @@
 </template>
 
 <script setup>
-  import Logo from '@/assets/logo.svg'
+  import Logo from '@/assets/pinchake-logo.jpg'
 
   const features = ref([
     ['Components', 5, '40+'],

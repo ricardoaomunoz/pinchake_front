@@ -1,8 +1,8 @@
 <template>
   <v-theme-provider :theme="dark? 'dark': 'light'">
     <BaseImg
-      :src="ZeroLogoDark"
-      max-width="128"
+      :src="Logo"
+      max-width="140"
       min-height="78"
       width="100%"
       contain
@@ -11,12 +11,12 @@
     <BaseTitle
       size="text-body-1"
       space="4"
-      title="MULTI-PURPOSE THEME"
+      title="Pinchake Trekking & Adventure"
       weight="regular"
     />
 
     <BaseBody>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo pariatur quidem, quis modi iure nihil commodi suscipit, corporis dicta adipisci, voluptatum quia cupiditate. Nulla minus voluptatum nostrum deleniti, asperiores facere.
+      We are a local guiding team dedicated to trekking in the Colombian Andes. Our trips highlight safety, community, and conservation.
     </BaseBody>
 
     <BaseBtn
@@ -24,13 +24,13 @@
       color="white"
       outlined
     >
-      More Info
+      Learn More
     </BaseBtn>
   </v-theme-provider>
 </template>
 
 <script setup>
-  import ZeroLogoDark from '@/assets/zero-logo-dark.svg'
+  import Logo from '@/assets/pinchake-logo.jpg'
 
   defineProps({
     title: String,

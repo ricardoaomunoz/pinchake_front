@@ -31,24 +31,24 @@
 <script setup>
   const cards = ref([
     {
-      icon: 'mdi-keyboard-outline',
-      title: 'Trendy Design',
-      text: 'Efficiently unleash media information without cross-media value. Quickly maximize value timely deliverables schemas.',
+      icon: 'mdi-compass-outline',
+      title: 'Curated Routes',
+      text: 'High-mountain treks across Colombia with clear itineraries and experienced local guides.',
     },
     {
-      icon: 'mdi-camera-outline',
-      title: 'Photography',
-      text: 'Efficiently unleash media information without cross-media value. Quickly maximize value timely deliverables schemas.',
+      icon: 'mdi-mountain',
+      title: 'Altitude Ready',
+      text: 'We plan acclimatization and pacing to keep your trek safe and enjoyable.',
     },
     {
-      icon: 'mdi-pencil-outline',
-      title: 'Brand Making',
-      text: 'Efficiently unleash media information without cross-media value. Quickly maximize value timely deliverables schemas.',
+      icon: 'mdi-leaf',
+      title: 'Conservation Minded',
+      text: 'Leave-no-trace practices and respect for Andean ecosystems are part of every trip.',
     },
     {
-      icon: 'mdi-puzzle-outline',
-      title: '24/7 Support',
-      text: 'Efficiently unleash media information without cross-media value. Quickly maximize value timely deliverables schemas.',
+      icon: 'mdi-account-group-outline',
+      title: 'Small Groups',
+      text: 'Personal attention, flexible pacing, and a better connection to the mountains.',
     },
   ])
 </script>

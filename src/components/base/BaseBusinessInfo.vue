@@ -1,12 +1,12 @@
 <template>
   <v-theme-provider :theme="dark? 'dark': 'light'">
     <div>
-      <BaseInfoCard
-        pace="6"
-        title="KEEP IN TOUCH WITH US"
-      >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo pariatur quidem, quis modi iure nihil commodi suscipit, corporis dicta adipisci, voluptatum quia cupiditate. Nulla minus voluptatum nostrum deleniti, asperiores facere.
-      </BaseInfoCard>
+    <BaseInfoCard
+      pace="6"
+      title="Keep in Touch with Pinchake"
+    >
+      Reach out for custom treks, group trips, or itinerary advice for the Colombian Andes.
+    </BaseInfoCard>
 
       <BaseBusinessContact :dark="dark" dense />
     </div>

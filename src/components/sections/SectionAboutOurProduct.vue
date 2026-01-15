@@ -2,7 +2,7 @@
   <BaseSection id="about-our-product">
     <BaseSectionHeading
       icon="$vuetify"
-      title="About our Product"
+      title="About Pinchake"
     />
 
     <v-container>
@@ -23,21 +23,21 @@
 <script setup>
   const cards = ref([
     {
-      title: 'Grow your Revenue',
-      subtitle: 'Best Productivity',
-      text: 'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut dolorum fuga.harum quidem rerum facilis estexpedita distinctio.',
+      title: 'Local Andean Guides',
+      subtitle: 'Colombia Based',
+      text: 'We are a Colombian guiding team specialized in trekking and high-mountain adventures across the Andes.',
       callout: '01',
     },
     {
-      title: 'Affordable Prices',
-      subtitle: 'Special Offers',
-      text: 'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut dolorum fuga.harum quidem rerum facilis estexpedita distinctio.',
+      title: 'High-Altitude Expertise',
+      subtitle: 'Safety First',
+      text: 'Routes are designed with safety, acclimatization, and responsible trekking practices in mind.',
       callout: '02',
     },
     {
-      title: 'Target Setting',
-      subtitle: 'Income Flow',
-      text: 'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut dolorum fuga.harum quidem rerum facilis estexpedita distinctio.',
+      title: 'Conservation Focus',
+      subtitle: 'Respect the Mountains',
+      text: 'We promote the conservation of Andean ecosystems while supporting local communities.',
       callout: '03',
     },
   ])

@@ -10,12 +10,12 @@
           <v-col cols="10">
             <BaseTitle
               :space="mdAndUp ? 0 : 4"
-              title="HAVE QUESTIONS? LET US KNOW!"
+              title="Have questions about a trek?"
             />
 
             <BaseBody space="0">
               <span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque modi ab accusantium architecto voluptates ipsa molestiae.
+                Tell us your preferred dates and fitness level, and we will suggest the best Andean route.
               </span>
             </BaseBody>
           </v-col>
@@ -27,8 +27,7 @@
             <BaseBtn
               :block="smAndDown"
               color="white"
-              href="mailto:shop@vuetifyjs.com?subject=Zero%20Theme%20Question"
-              target="_blank"
+              href="#info-alt"
               large
               outlined
             >
