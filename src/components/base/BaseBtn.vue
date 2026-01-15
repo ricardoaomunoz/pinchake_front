@@ -1,0 +1,38 @@
+<template>
+  <v-btn
+    :color="color"
+    :min-width="minWidth"
+    :tile="tile"
+    :variant="outlined ? 'outlined' : text ? 'plain' : 'flat'"
+    class="font-weight-bold"
+    size="x-large"
+    v-bind="$attrs"
+  >
+    <slot />
+  </v-btn>
+</template>
+
+<script setup>
+  defineProps({
+    color: {
+      type: String,
+      default: 'primary',
+    },
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
+    minWidth: {
+      type: [Number, String],
+      default: 164,
+    },
+    tile: {
+      type: Boolean,
+      default: true,
+    },
+    text: {
+      type: Boolean,
+      default: false,
+    },
+  })
+</script>

@@ -1,0 +1,17 @@
+<template>
+  <RouterView />
+</template>
+
+<script setup>
+  //
+</script>
+
+<style lang="sass">
+  .extra-padding
+    padding-bottom: 96px !important
+    padding-top: 96px !important
+
+    @media screen and (max-width: 959px)
+      padding-top: 48px !important
+      padding-bottom: 48px !important
+</style>
