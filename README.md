@@ -15,8 +15,14 @@ cp .env.example .env
 yarn dev
 ```
 
+## Docker
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
 ## Admin
 
 - Login: `/admin/login`
 - Requires backend running at `VITE_API_URL`.
-
