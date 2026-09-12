@@ -2,7 +2,7 @@
   <BaseSection id="about-our-product">
     <BaseSectionHeading
       icon="$vuetify"
-      title="About Pinchake"
+      :title="t('about.title')"
     />
 
     <v-container>
@@ -21,23 +21,28 @@
 </template>
 
 <script setup>
-  const cards = ref([
+  import { computed } from 'vue'
+  import { useI18n } from 'vue-i18n'
+
+  const { t } = useI18n()
+
+  const cards = computed(() => [
     {
-      title: 'Local Andean Guides',
-      subtitle: 'Colombia Based',
-      text: 'We are a Colombian guiding team specialized in trekking and high-mountain adventures across the Andes.',
+      title: t('about.cards.one.title'),
+      subtitle: t('about.cards.one.subtitle'),
+      text: t('about.cards.one.text'),
       callout: '01',
     },
     {
-      title: 'High-Altitude Expertise',
-      subtitle: 'Safety First',
-      text: 'Routes are designed with safety, acclimatization, and responsible trekking practices in mind.',
+      title: t('about.cards.two.title'),
+      subtitle: t('about.cards.two.subtitle'),
+      text: t('about.cards.two.text'),
       callout: '02',
     },
     {
-      title: 'Conservation Focus',
-      subtitle: 'Respect the Mountains',
-      text: 'We promote the conservation of Andean ecosystems while supporting local communities.',
+      title: t('about.cards.three.title'),
+      subtitle: t('about.cards.three.subtitle'),
+      text: t('about.cards.three.text'),
       callout: '03',
     },
   ])

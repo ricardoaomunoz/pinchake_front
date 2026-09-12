@@ -15,18 +15,18 @@
           width="100%"
         >
           <BaseSubheading
-            title="TREKKING AND ADVENTURE IN THE COLOMBIAN ANDES"
+            :title="t('hero.eyebrow')"
             weight="regular"
           />
 
           <BaseHeading
             size="text-h2"
-            title="PINCHAKE TREKKING & ADVENTURE"
+            :title="t('hero.title')"
             weight="medium"
           />
 
           <BaseBody>
-            Local mountain guides delivering high-altitude treks across Colombia. We create safe, memorable journeys while promoting conservation of Andean ecosystems and culture.
+            {{ t('hero.body') }}
           </BaseBody>
 
           <div
@@ -34,7 +34,7 @@
             class="d-flex flex-wrap"
           >
             <BaseBtn :to="{ name: 'Tours' }">
-              View Tours
+              {{ t('hero.primaryCta') }}
             </BaseBtn>
 
             <span class="font-weight-bold ml-6 mr-4 my-4">or</span>
@@ -46,7 +46,7 @@
               text
               href="#contact-us"
             >
-              Plan Your Trek
+              {{ t('hero.secondaryCta') }}
             </BaseBtn>
           </div>
         </v-responsive>
@@ -56,11 +56,13 @@
 </template>
 
 <script setup>
-  import BackgroundLight from '@/assets/light.jpg'
+  import BackgroundLight from '@/assets/photo1.jpg'
+  import { useI18n } from 'vue-i18n'
 
   const { mdAndUp, smAndDown } = useDisplay()
   const theme = useTheme()
   const { mainRect } = useLayout()
+  const { t } = useI18n()
 
   const minHeight = computed(() => {
     const height = mdAndUp ? '100vh' : '50vh'

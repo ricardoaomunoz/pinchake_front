@@ -10,12 +10,12 @@
           <v-col cols="10">
             <BaseTitle
               :space="mdAndUp ? 0 : 4"
-              title="Have questions about a trek?"
+              :title="t('contact.title')"
             />
 
             <BaseBody space="0">
               <span>
-                Tell us your preferred dates and fitness level, and we will suggest the best Andean route.
+                {{ t('contact.body') }}
               </span>
             </BaseBody>
           </v-col>
@@ -31,7 +31,7 @@
               large
               outlined
             >
-              Contact Us
+              {{ t('contact.cta') }}
             </BaseBtn>
           </v-col>
         </v-row>
@@ -41,5 +41,8 @@
 </template>
 
 <script setup>
+  import { useI18n } from 'vue-i18n'
+
   const { mdAndUp, smAndDown } = useDisplay()
+  const { t } = useI18n()
 </script>

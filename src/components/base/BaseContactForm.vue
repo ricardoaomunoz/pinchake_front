@@ -3,19 +3,19 @@
     <BaseInfoCard
       :space="4"
       :subtitle="subtitle"
-      :title="title"
+      :title="title || t('form.title')"
       color="primary"
     />
 
-    <BaseTextField label="Name" />
+    <BaseTextField :label="t('form.name')" />
 
-    <BaseTextField label="Email" />
+    <BaseTextField :label="t('form.email')" />
 
-    <BaseTextField label="Subject" />
+    <BaseTextField :label="t('form.subject')" />
 
     <BaseTextarea
       class="mb-6"
-      label="Your Need & Description"
+      :label="t('form.message')"
     />
 
     <BaseBtn
@@ -24,19 +24,19 @@
       target="_blank"
       outlined
     >
-      Send message
+      {{ t('form.cta') }}
     </BaseBtn>
   </div>
 </template>
 
 <script setup>
+  import { useI18n } from 'vue-i18n'
+
   const theme = useTheme()
+  const { t } = useI18n()
 
   defineProps({
     subtitle: String,
-    title: {
-      type: String,
-      default: 'Send Us a Message',
-    },
+    title: String,
   })
 </script>

@@ -31,5 +31,5 @@
 </template>
 
 <script setup>
-  import Logo from '@/assets/pinchake-logo.jpg'
+  import Logo from '@/assets/pinchake-logo.png'
 </script>

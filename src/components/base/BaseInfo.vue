@@ -11,12 +11,12 @@
     <BaseTitle
       size="text-body-1"
       space="4"
-      title="Pinchake Trekking & Adventure"
+      :title="t('info.title')"
       weight="regular"
     />
 
     <BaseBody>
-      We are a local guiding team dedicated to trekking in the Colombian Andes. Our trips highlight safety, community, and conservation.
+      {{ t('info.body') }}
     </BaseBody>
 
     <BaseBtn
@@ -24,13 +24,16 @@
       color="white"
       outlined
     >
-      Learn More
+      {{ t('info.cta') }}
     </BaseBtn>
   </v-theme-provider>
 </template>
 
 <script setup>
-  import Logo from '@/assets/pinchake-logo.jpg'
+  import Logo from '@/assets/pinchake-logo.png'
+  import { useI18n } from 'vue-i18n'
+
+  const { t } = useI18n()
 
   defineProps({
     title: String,

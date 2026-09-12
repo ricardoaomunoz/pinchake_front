@@ -12,7 +12,7 @@
       >
         <BaseTitle
           space="0"
-          title="Get Trek Updates"
+          :title="t('newsletter.title')"
         />
 
         <v-responsive
@@ -22,7 +22,7 @@
           width="100%"
         >
           <BaseTextField
-            label="Your Email Address"
+            :label="t('newsletter.email')"
             hide-details
           />
           <v-btn
@@ -30,7 +30,7 @@
             height="40"
             variant="outlined"
           >
-            Subscribe
+            {{ t('newsletter.cta') }}
           </v-btn>
         </v-responsive>
       </v-row>
@@ -39,5 +39,8 @@
 </template>
 
 <script setup>
+  import { useI18n } from 'vue-i18n'
+
   const theme = useTheme()
+  const { t } = useI18n()
 </script>

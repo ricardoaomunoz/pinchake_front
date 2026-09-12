@@ -29,26 +29,31 @@
 </template>
 
 <script setup>
-  const cards = ref([
+  import { computed } from 'vue'
+  import { useI18n } from 'vue-i18n'
+
+  const { t } = useI18n()
+
+  const cards = computed(() => [
     {
       icon: 'mdi-compass-outline',
-      title: 'Curated Routes',
-      text: 'High-mountain treks across Colombia with clear itineraries and experienced local guides.',
+      title: t('features.curated.title'),
+      text: t('features.curated.text'),
     },
     {
       icon: 'mdi-mountain',
-      title: 'Altitude Ready',
-      text: 'We plan acclimatization and pacing to keep your trek safe and enjoyable.',
+      title: t('features.altitude.title'),
+      text: t('features.altitude.text'),
     },
     {
       icon: 'mdi-leaf',
-      title: 'Conservation Minded',
-      text: 'Leave-no-trace practices and respect for Andean ecosystems are part of every trip.',
+      title: t('features.conservation.title'),
+      text: t('features.conservation.text'),
     },
     {
       icon: 'mdi-account-group-outline',
-      title: 'Small Groups',
-      text: 'Personal attention, flexible pacing, and a better connection to the mountains.',
+      title: t('features.groups.title'),
+      text: t('features.groups.text'),
     },
   ])
 </script>

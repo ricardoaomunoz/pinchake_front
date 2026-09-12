@@ -6,7 +6,7 @@
     <BaseSectionHeading
       icon="mdi-chat-processing"
       space="0"
-      title="Customer Reviews"
+      :title="t('reviews.title')"
     />
 
     <v-carousel
@@ -52,7 +52,10 @@
 </template>
 
 <script setup>
+  import { useI18n } from 'vue-i18n'
+
   provide('heading', { align: 'center' })
+  const { t } = useI18n()
 
   const customers = ref([
     {

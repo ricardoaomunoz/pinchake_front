@@ -1,8 +1,8 @@
 <template>
   <v-container class="py-12">
     <BaseSectionHeading
-      title="Trekking Tours"
-      subtitle="Explore Colombia's high-mountain routes with local guides."
+      :title="t('tours.heading')"
+      :subtitle="t('tours.subheading')"
     />
 
     <v-row class="mt-6" density="compact">
@@ -31,12 +31,14 @@
 <script setup>
   import { onMounted, ref } from 'vue'
   import { api } from '@/services/api'
+  import { useI18n } from 'vue-i18n'
 
   const tours = ref([])
+  const { locale, t } = useI18n()
 
   onMounted(async () => {
     try {
-      const data = await api.getTours()
+      const data = await api.getTours(locale.value)
       tours.value = data.tours || []
     } catch (error) {
       tours.value = []

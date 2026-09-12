@@ -3,9 +3,9 @@
     <div>
     <BaseInfoCard
       pace="6"
-      title="Keep in Touch with Pinchake"
+      :title="t('business.title')"
     >
-      Reach out for custom treks, group trips, or itinerary advice for the Colombian Andes.
+      {{ t('business.body') }}
     </BaseInfoCard>
 
       <BaseBusinessContact :dark="dark" dense />
@@ -14,12 +14,16 @@
 </template>
 
 <script setup>
+  import { useI18n } from 'vue-i18n'
+
   defineProps({
     dark: {
       type: Boolean,
       default: false,
     },
   })
+
+  const { t } = useI18n()
 
   const business = ref([
     {
